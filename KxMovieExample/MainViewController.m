@@ -41,9 +41,9 @@
             //@"rtsp://184.72.239.149/vod/mp4://BigBuckBunny_175k.mov",
             //@"http://santai.tv/vod/test/BigBuckBunny_175k.mov",
         
-//            @"rtmp://aragontvlivefs.fplive.net/aragontvlive-live/stream_normal_abt",
-//            @"rtmp://ucaster.eu:1935/live/_definst_/discoverylacajatv",
-//            @"rtmp://edge01.fms.dutchview.nl/botr/bunny.flv"
+            @"rtmp://aragontvlivefs.fplive.net/aragontvlive-live/stream_normal_abt",
+            @"rtmp://ucaster.eu:1935/live/_definst_/discoverylacajatv",
+            @"rtmp://192.168.1.115:1935/live/p1"
         ];
         
     }

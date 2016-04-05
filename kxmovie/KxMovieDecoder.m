@@ -1089,7 +1089,7 @@ static int interrupt_callback(void *ctx);
     [self closeScaler];
     
     _pictureValid = avpicture_alloc(&_picture,
-                                    PIX_FMT_RGB24,
+                                    AV_PIX_FMT_RGB24,
                                     _videoCodecCtx->width,
                                     _videoCodecCtx->height) == 0;
     
@@ -1102,7 +1102,7 @@ static int interrupt_callback(void *ctx);
                                        _videoCodecCtx->pix_fmt,
                                        _videoCodecCtx->width,
                                        _videoCodecCtx->height,
-                                       PIX_FMT_RGB24,
+                                       AV_PIX_FMT_RGB24,
                                        SWS_FAST_BILINEAR,
                                        NULL, NULL, NULL);
         
@@ -1394,12 +1394,12 @@ static int interrupt_callback(void *ctx);
                     
                     if (!_disableDeinterlacing &&
                         _videoFrame->interlaced_frame) {
-
-                        avpicture_deinterlace((AVPicture*)_videoFrame,
-                                              (AVPicture*)_videoFrame,
-                                              _videoCodecCtx->pix_fmt,
-                                              _videoCodecCtx->width,
-                                              _videoCodecCtx->height);
+                        NSLog(@"------------------------");
+//                        avpicture_deinterlace((AVPicture*)_videoFrame,
+//                                              (AVPicture*)_videoFrame,
+//                                              _videoCodecCtx->pix_fmt,
+//                                              _videoCodecCtx->width,
+//                                              _videoCodecCtx->height);
                     }
                     
                     KxVideoFrame *frame = [self handleVideoFrame];
